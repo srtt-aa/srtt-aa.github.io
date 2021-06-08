@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>index.html(3)</title>
+
+
+</head>
+
+
+<body style="background-color: rgb(255, 240, 245);" charset="ISO-8859-2&quot;" http-equiv="content-type">
+
+<br>
+
+<div>
+<script>
+var sent = [ 'Nasze �ycie jest takim, jakim uczyni�y je nasze my�li.', '�ycie jest jak jazda na rowerze. �eby utrzyma� r�wnowag�, musisz by� w ci�g�ym ruchu.', 'Dramatem �ycia jest to, �e starzejemy si� zbyt szybko, a m�drzejemy zbyt p�no.', 'Wielu �yciowych przegranych to ludzie, kt�rzy nie zdawali sobie sprawy, jak blisko byli sukcesu, kiedy si� poddali.', '�ycia nie mierzy si� ilo�ci� oddech�w, ale ilo�ci� chwil, kt�re zapieraj� dech w piersiach.', '�ycie jest wspania�e, nale�y tylko spogl�da� na nie przez w�a�ciwe okulary.', '�ycie jest straszne, ale ja postanowi�em, �e jest pi�kne.' ];
+var nazwy_dni = [ 'niedziela', 'poniedzia�ek', 'wtorek', '�roda', 'czwartek', 'pi�tek', 'sobota' ];
+var nd = new Date().getDay();
+var dd = new Date().getDate();
+if(dd<10) dd = "0"+dd;
+var mm = new Date().getMonth() + 1;
+if(mm<10) mm = "0"+mm;
+var rr = new Date().getFullYear();
+document.write("Dzisiaj jest " + nazwy_dni[nd] + ', ' + dd + '.' + mm + '.' + rr + '. ' + '<br>***<br>'+ sent[nd]);
+</script></div>
+
+<br>
+
+</body>
+</html>
